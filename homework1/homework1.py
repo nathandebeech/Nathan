@@ -252,3 +252,61 @@ print(f"Hello, my name is {name}") # outputed the same as above
 
 # --- 3.5 Terminal Commands ---
 
+
+# 1. cd = change directories. opens another folder
+# Ex. cd homework1
+
+# 2. ls = list directories. Lists all folders in parent folder
+# Ex. ls 
+
+# 3. ls -a = list hidden files. Lists hidden files such as git
+# Ex. ls -a
+
+# 4. mkdir = make direcoty. Creates new directory
+# mkdir nathan_is_awesome
+
+# 5. cat = concatenate. list everything in specific directory
+# cat homework1.py
+
+# 6. pwd = print working directory. Shows what directory you are currantely in
+# pwd
+
+# 7. cd .. = change directory up. Moves up one directory level (closer to parent)
+# cd ..
+
+# 8. cd . = change directory to current. Moves to current working directory
+#. cd .
+
+# 9. cd ~ = change to home directory. moves to the home directory of computer
+# cd ~
+
+# 10. cp = copy. duplicates files and directories
+# cp homework1
+
+# 11. mv = move. Moves directories and files from one location to another
+# mv homework1.py /home/user/nathan
+
+# 12. rm = remove. Deletes files and directories
+# rm nathan
+
+# 13. clear = clear. clears terminal screen of any previous commands
+# clear
+
+# 14. grep = Global Regular Expressions Print. Used to search for specific words or phrases in files
+# grep "error"
+
+# 1.
+# head = header. Prints first 10 lines of file
+#  head homework1.py
+# chown = change owner. Changes file owner or group.
+# chown: nathan.file
+# kill = kill. Terminates a process
+# kill 1234
+# 2. ls -a shows all hidden directories, unlike ls
+# 3. a file that is not visble with ls, such as git
+# 4. ls -l : long format. prints detailes about each file and directory
+# ls -l
+#  rm -rf = femoves directories and content without conformation message.
+# rm -rf nathan
+# command --h = help. shows instructions
+# command --h
