@@ -60,6 +60,7 @@
 
 # 17) What’s a question you still have? What’s something you’re confused about?
 # On question 9 of the this homework, it implies that course_assignments is inside of the yourname directory, but that is not true for me. Is this okay?
+# Also, 4.2 of the homework is written in a way to suggest that I should have more script output than one line. Did I do this correctly?
 
 # 18) Tell me a fun fact!
 # Farts have been measured to travel around 10 feet per second
