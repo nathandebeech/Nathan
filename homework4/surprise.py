@@ -41,19 +41,19 @@ targets = {
 # --- Questions ---
 # 1) Write a function that uses a loop to print the name of each star.
 
-# for dictionary in targets:
-#     print(dictionary)
+for dictionary in targets:
+    print(dictionary)
 
 # 2) Write a function that uses a loop to print the name of each star with its spectral type.
 
-# for dictionary in targets:
-#     print(targets[dictionary]["Spectral Type"])
+for dictionary in targets:
+    print(targets[dictionary]["Spectral Type"])
 
 # 3) Write a function that uses a conditional to find stars with magnitudes greater than 0.1 mag.
 
-# for dictionary in targets:
-#     if targets[dictionary]["Magnitude"] > 0.1:
-#         print(dictionary)
+for dictionary in targets:
+    if targets[dictionary]["Magnitude"] > 0.1:
+        print(dictionary)
 
 # 4) Look up another target, add all the necessary information to the targets list. 
 
@@ -64,17 +64,37 @@ Arcturus = {
     "Spectral Type": "K1.5IIIFe-0.5"
 }
 targets["Arcturus"] = Arcturus
-# print(targets)
+print(targets)
 
 # 5) Write a function that finds the brightest star whose Declination is closest to 20°.
-def brightest_magnitude(targets): 
-    brightest = targets["Vega"]["Magnitude"]
-    for dictionary in targets:
-        if targets[dictionary]["Magnitude"] > brightest:
-            brightest = dictionary["Magnitude"]
-    print(brightest)
-       
-brightest_magnitude(targets)
+# create arbitrary range and maybe play around with changing the range
+# We can say 10 degrees to 30 degrees, and then change that to 15 to 25 etc.
+# Super vague question and I was told that any interpretation of the problem is fine.
+declinations = []
+for star in targets:
+    declinations.append(targets[star]["Dec"][0:4])
+
+declinations_degree_value = []
+for declination in declinations:
+    if declination[0] == "+":
+        declinations_degree_value.append(declination[1:3])
+
+
+dec_between_fifteen_twentyfive = []
+for i in range(len(declinations_degree_value)):
+    declinations_degree_value[i] = int(declinations_degree_value[i])
+    if declinations_degree_value[i] >= 15 and declinations_degree_value[i] <= 25:
+        dec_between_fifteen_twentyfive.append(declinations_degree_value[i])
+
+for dec in dec_between_fifteen_twentyfive:
+    if dec == 19:
+        print("Arcturus")
+    elif dec == 89:
+        print("Polaris")
+    elif dec == 7:
+        print("Betelgeuse")
+    elif dec == 38:
+        print("Vega")
 
 
 # 6) What is your favorite constellation?
