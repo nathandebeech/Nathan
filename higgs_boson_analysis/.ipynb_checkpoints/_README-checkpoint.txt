@@ -1,0 +1,3 @@
+The compressed csv file: atlas-higgs-challenge-2014-v2.csv.gz is the data being analyzed from the Kaggle competition. Due to the size of the file, it likeley will not open.
+
+The data_analysis.ipynb includes all of the code for this project. It also is responsible for the creation of the remaning files in the repository. These files are simply individual graphs of variables analyzed from the selected data.
